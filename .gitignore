@@ -1,0 +1,17 @@
+#Generaled classes
+
+*.class
+
+# Package Files
+*.jar
+*.war
+
+#Eclipse
+
+*.project
+*.classpath
+*.settings
+
+#Maven
+target/*
+.idea/

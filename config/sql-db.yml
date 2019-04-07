@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.Oracle10gDialect
+  datasource:
+    driverClassName: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: switcher
+    password: switcher
+  flyway:
+    table: FLYWAY_SCHEMA_HISTORY
+    baseline-on-migrate: true
+#loggin MUST START WITHOUT extra indent
+logging:
+  level:
+    org.springframework.transaction: TRACE
